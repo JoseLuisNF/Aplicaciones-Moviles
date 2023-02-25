@@ -41,29 +41,40 @@
         <div class="row">
 
             <div class="col-md-4">
-                <h3 style="text-align:center">Alta de Alumnos</h3>
+                <h3 style="text-align:center">Alta de Juegos</h3>
 
                 <form action="#">
                     <div class="form-group ">
-                        <label for="Input1">Matrícula</label>
-                        <input type="text " class="form-control " id="Input1" placeholder="Num. de control">
+                        <label for="Input1">Game ID</label>
+                        <input type="text " class="form-control " id="Input1" placeholder="Game ID">
                     </div>
                     <div class="form-group">
-                        <label for="Input2">Nombre</label>
-                        <input type="text" class="form-control" id="Input2" placeholder="Nombre">
+                        <label for="Input2">Título</label>
+                        <input type="text" class="form-control" id="Input2" placeholder="Title">
                     </div>
                     <div class="form-group">
-                        <label for="Input3">Correo electrónico</label>
-                        <input type="email" class="form-control" id="Input3" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="Input3">Desarrollador</label>
+                        <input type="text" class="form-control" id="Input3" placeholder="Developer">
+                    </div>
+                    <div class="form-group">
+                        <label for="Input4">Distribuidor</label>
+                        <input type="text" class="form-control" id="Input4" placeholder="Publisher">
                     </div>
                     <div class="form-group ">
-                        <label for="Input4">Carrera</label>
-                        <select class="form-control " id="Input4">
+                        <label for="Input5">Plataforma</label>
+                        <select class="form-control " id="Input5">
                             <option value="selecciona">selecciona</option>
-                            <option value="Informatica">Informatica</option>
-                            <option value="Sistemas">Sistemas</option>
-                            <option value="TICS">TICS</option>
+                            <option value="Windows">Windows</option>
+                            <option value="Steam Deck">Steam Deck</option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Input6">Fecha de lanzamiento</label>
+                        <input type="text" class="form-control" id="Input6" placeholder="Release Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="Input7">Última actualización</label>
+                        <input type="text" class="form-control" id="Input7" placeholder="Last Update">
                     </div>
                     <button type="submit " class="btn btn-primary" onclick="createR()">Enviar</button>
                     <button type="reset " class="btn btn-secondary" onclick="resetFields()">Limpiar</button>
@@ -79,10 +90,10 @@
                     <thead>
                       <tr>
                         <th scope="col">Game ID</th>
-                        <th scope="col">Tipo de App</th>
+                        <th scope="col">Título</th>
                         <th scope="col">Desarrollador</th>
                         <th scope="col">Distribuidor</th>
-                        <th scope="col">Plataformas</th>
+                        <th scope="col">Plataforma</th>
                         <th scope="col">Fecha de lanzamiento</th>
                         <th scope="col">Última actualización</th>
                       </tr>
