@@ -30,7 +30,7 @@ function createR() {
     var distribuidor = document.getElementById("Input4").value;
     var plataforma = document.getElementById("Input5").value;
     var fechalanzamiento = document.getElementById("Input6").value;
-    var ultimaactualizacion = document.getElementById("Input4").value;
+    var ultimaactualizacion = document.getElementById("Input7").value;
 
     //validaciones
     if (id.length > 0) {
@@ -82,7 +82,7 @@ function createR() {
 function read(){
     document.getElementById("Table1").innerHTML='';
 
-    var ref = firebase.database().ref('Alumnos');
+    var ref = firebase.database().ref('Juegos');
 /**   
    ref.on('value', function(snapshot) {
         snapshot.forEach(row=>{
@@ -154,7 +154,7 @@ function updateR(juego){
         document.getElementById("Input4").value=juego.distribuidor;
         document.getElementById("Input5").value=juego.plataforma;
         document.getElementById("Input6").value=juego.fechalanzamiento;
-        document.getElementById("Input4").value=juego.ultimaactualizacion;
+        document.getElementById("Input7").value=juego.ultimaactualizacion;
     }
 }
 
