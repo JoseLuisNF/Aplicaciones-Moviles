@@ -2,14 +2,12 @@
 import React, {Component} from 'react';
 import './Body.css';
 
-class Body extends Component{
-    render()
-    {
-        return(
-            <div className='Body'>
-
-            </div>
-        );
-    }
+function Body(props){
+    return(
+        <div className='Body'>
+           {props.arreglo.map((e,index)=><h1 key={index}>{e}</h1>)
+           }
+        </div>
+    );
 }
 export default Body;
