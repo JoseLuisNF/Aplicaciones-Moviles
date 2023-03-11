@@ -19,7 +19,9 @@ class App extends Component {
       <Body 
       const arreglo={[1,2,3,4]}
       />
-      <Footer /></>
+      <Footer 
+      etiqueta={<h3>Hola, estás en el final de la página</h3>}
+      /></>
     )
   };
 }

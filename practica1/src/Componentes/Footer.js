@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+//Importacion de librería y hoja de estilos
+import React from 'react';
 import './Footer.css';
 
-class Footer extends Component{
-    render()
-    {
+function Footer(props){
         return(
             <div className='Footer'>
-                Ya se acabó xd
+               {props.etiqueta}
             </div>
         );
-    }
 }
 export default Footer;
