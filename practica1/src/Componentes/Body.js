@@ -6,7 +6,7 @@ class Body extends Component{
     {
         return(
             <div className='Body'>
-                Texto bonito~
+                
             </div>
         );
     }
