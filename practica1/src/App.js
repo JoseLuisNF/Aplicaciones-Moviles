@@ -12,7 +12,14 @@ class App extends Component {
       <><Banner 
       titulo="Hola, soy un banner"
       />
-      <Header /><Banner /><Body /><Footer /></>
+      <Header />
+      <Banner 
+      titulo="Hola, soy otro banner"
+      />
+      <Body 
+      const arreglo={[1,2,3,4]}
+      />
+      <Footer /></>
     )
   };
 }
