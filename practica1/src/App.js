@@ -9,7 +9,10 @@ import Header from './Componentes/Header';
 class App extends Component {
   render(){
     return(
-      <><Banner /><Header /><Banner /><Body /><Footer /></>
+      <><Banner 
+      titulo="Hola, soy un banner"
+      />
+      <Header /><Banner /><Body /><Footer /></>
     )
   };
 }

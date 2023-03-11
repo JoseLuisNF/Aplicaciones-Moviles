@@ -6,7 +6,7 @@ class Banner extends Component{
     {
         return(
             <div className='Banner'>
-                Hola
+                <p>{this.props.titulo}</p>
             </div>
         );
     }
